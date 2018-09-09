@@ -35,7 +35,7 @@ else
 	printf "${kuning}[!]${NC} Contact : facebook.com/agusu.des\n"
 	exit
 fi
-#token='5f52799c29f136364557effbe4cbf40e'
+#token='cbcbde8f9c6faf84709b5842875571e4'
 printf "${kuning}[!]${NC} Checking Token..."
 checktoken=$(curl -s -d "token=$ctoken" 'http://www.newscat.com/api/user/info' -o "info.tmp")
 getok=$(cat info.tmp | grep -Po '(?<=message":")[^"]*')
